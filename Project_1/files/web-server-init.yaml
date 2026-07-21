@@ -1,0 +1,24 @@
+#cloud-config
+package_update: true
+package_upgrade: false
+packages:
+  - nginx
+write_files:
+  - path: /var/www/html/index.html
+    permissions: '0644'
+    content: |
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HUG Terraform Challenge</title>
+      </head>
+      <body>
+        <h1>${full_name}</h1>
+        <h2>${challenge_label}</h2>
+      </body>
+      </html>
+runcmd:
+  - systemctl enable nginx
+  - systemctl restart nginx
