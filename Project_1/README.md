@@ -24,7 +24,7 @@ az login
 1. Change into this directory:
 
 ```bash
-cd "Project 1"
+cd "Project_1"
 ```
 
 2. Initialize Terraform:
