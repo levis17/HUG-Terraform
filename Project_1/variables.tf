@@ -43,7 +43,7 @@ variable "vm_name" {
 variable "vm_size" {
   description = "Size of the Azure VM"
   type        = string
-  default     = "Standard_B1s"
+  default     = "Standard_D2s_v3"
 }
 
 variable "admin_username" {
@@ -62,7 +62,7 @@ variable "admin_password" {
 variable "full_name" {
   description = "Your full name to display on the web page"
   type        = string
-  default     = "Your Full Name"
+  default     = "Osayuwamen Aigbogun"
 }
 
 variable "challenge_label" {
