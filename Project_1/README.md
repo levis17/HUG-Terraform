@@ -43,6 +43,16 @@ terraform apply -var="full_name=Your Firstname Lastname"
 
 5. After deployment, browse to the public IP address shown in the outputs.
 
+## Final Output
+
+Below is a screenshot of the final deployed web page:
+
+![Final output](files/HUG_Project_1.png)
+
+You can also view the VM screenshot here:
+
+![VM screenshot](files/HUG_Project_1_VM.png)
+
 ## Outputs
 
 - `public_ip_address`
